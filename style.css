@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Arial Rounded';
+  src: url('/public/assets/fonts/arial_rounded.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +10,59 @@
 }
 
 body {
-  font-family: 'Poppins';
-  height: 100dvh;
+  font-family: 'Arial Rounded';
+  min-height: 100dvh;
   width: 100dvw;
   background: linear-gradient(#2a3144 10%, #04080b);
+  color: white;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+h1 {
+  margin: 2%;
+  text-transform: uppercase;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20% 0;
+}
+
+article {
+  background-color: rgba(97, 110, 154, 0.519);
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10% 5%;
+}
+
+img {
+  max-height: 200px;
+  border-radius: 15px;
+  /* box-shadow: 3px 3px 3px #2a3144; */
+}
+
+h2 {
+  margin: 5%;
+}
+
+.control-bar {
+  width: 70%;
+}
+
+input {
+  width: 100%;
 }
